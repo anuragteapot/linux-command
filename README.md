@@ -15,4 +15,4 @@
 </p>
 
 ## List of commands
-1. **Selenium server** installation here [Selenium server](https://github.com/Anu1601CS/linuxcommand/tree/master/src/selenium%20server).
+1. **Selenium server** installation here [Selenium server](https://github.com/Anu1601CS/linux-command/tree/master/src/selenium%20server).
