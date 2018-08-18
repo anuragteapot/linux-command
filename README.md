@@ -1,6 +1,6 @@
                     
 <p align="center">
-  <strong>Usefull linux fixes and commands</strong> 
+  <strong>Useful linux fixes and commands</strong> 
 </p>
 
 ### How to use
