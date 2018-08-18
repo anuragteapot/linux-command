@@ -6,8 +6,13 @@
 ### How to use
 
 ```markdown
-Download file you need form this repo run file using `./path=to=the=file`
-  Example:  Run in your terminal: ./install.sh
+1. Download file you need form this repo.
+2. Change permission of file `sudo chmod +x install.sh`
+3. Run script file `./install.sh`
+```
+<p align="center">
+  <img height="270" src="https://github.com/Anu1601CS/linux-command/blob/master/src/images/local.png">
+</p>
 
 # Header 1
 ## Header 2
@@ -22,7 +27,6 @@ Download file you need form this repo run file using `./path=to=the=file`
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
