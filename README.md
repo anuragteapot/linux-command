@@ -1,15 +1,13 @@
-## Helpfull linux hax and fixes.
+                    
+<p align="center">
+  <strong>Usefull linux fixes and commands</strong> 
+</p>
 
-You can use the [editor on GitHub](https://github.com/Anu1601CS/linux-command/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How to use
 
 ```markdown
-Syntax highlighted code block
+Download file you need form this repo run file using `./path=to=the=file`
+  Example:  Run in your terminal: ./install.sh
 
 # Header 1
 ## Header 2
