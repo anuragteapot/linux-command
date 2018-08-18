@@ -6,7 +6,7 @@
 ### How to use
 
 ```markdown
-Download file you need form this repo run file using ./path=to=the=file
+Download file you need form this repo run file using `./path=to=the=file`
   Example:  Run in your terminal: ./install.sh
 
 # Header 1
