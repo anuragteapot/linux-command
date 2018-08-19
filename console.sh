@@ -15,7 +15,7 @@ command_type=($(echo $get_command | tr " " "\n"))
 echo "------------------------------------------"
 
 # Exit
-if [ ${command_type[0]} == "exit" ] || [ ${command_type[0]} == "EXIT" ]
+if [ ${command_type[0]} == "exit" ]
 then
 echo "Bye!"
 echo "=========================================="
