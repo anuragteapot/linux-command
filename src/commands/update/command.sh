@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Stop mysql and run xampp server.
+# Update ubuntu
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
