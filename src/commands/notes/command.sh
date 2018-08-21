@@ -7,3 +7,5 @@ read -p "Notes : " message
 read -p "Name : " filename
 
 echo $message >> "/home/"$USER"/Documents/"$filename".txt"
+echo "---------------------------------------"
+printf "${GREEN}Saved.${NC}\n"

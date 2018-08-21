@@ -2,18 +2,18 @@
 
 # Server control
 
-if [ $TYPE == "xampp" ]
+if [ "$TYPE" == "xampp" ]
 then
   sudo /opt/lampp/lampp $CTYPE
 else
-  if [ $TYPE == "mysql" ]
+  if [ "$TYPE" == "mysql" ]
   then
     sudo /etc/init.d/mysql $CTYPE
   else
-    if [ $TYPE == "apache2" ]
+    if [ "$TYPE" == "apache2" ]
     then
       sudo service apache2 $CTYPE
-      echo "Done! - " $CTYPE
+      printf "${GREEN}Done! - $CTYPE${NC}\n"
     fi
   fi
 fi

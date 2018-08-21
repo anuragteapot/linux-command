@@ -3,10 +3,25 @@
 # Command line helper
 my_dir="$(dirname "$0")"
 
-echo Usage: command list [options]
+# Register color
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;35m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+export RED GREEN YELLOW BLUE NC
+
 echo
-echo Options:
-echo "=========================================="
+printf "  Usage: command list [${BLUE}options${NC}]\n"
+echo
+printf "  Options : [${BLUE}arguments${NC}]\n"
+echo
+for file in src/commands/*; do
+    printf "${GREEN}    -> $(basename "$file")\n${NC}"
+done
+echo
+printf "${YELLOW}==========================================${NC}\n"
 
 while :
 do
@@ -15,10 +30,10 @@ command_type=($(echo $get_command | tr " " "\n"))
 echo "------------------------------------------"
 
 # Exit
-if [ ${command_type[0]} == "exit" ]
+if [ "${command_type[0]}" == "exit" ]
 then
 echo "Bye!"
-echo "=========================================="
+printf "${YELLOW}==========================================${NC}\n"
 exit 0;
 fi
 
@@ -35,13 +50,13 @@ fi
 
 export CTYPE TYPE
 
-if [ -d "$my_dir/src/commands/${command_type[0]}/" ];
+if [ -d "$my_dir/src/commands/${command_type[0]}/" ] && [ ! -z "${command_type[0]}" ];
 then
   sudo chmod +x "$my_dir/src/commands/${command_type[0]}/command.sh"
   "$my_dir/src/commands/${command_type[0]}/command.sh"
 else
-  echo "Command not found."
+  printf "${RED}Command not found.${NC}\n"
 fi
-echo "=========================================="
+printf "${YELLOW}==========================================${NC}\n"
 done
 echo "Exit!"
